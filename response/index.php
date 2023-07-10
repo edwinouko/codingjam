@@ -10,7 +10,7 @@
     <div id="response-message">
         <?php
         $myfile = fopen("../response.txt", "r") or die("Unable to open file!");
-        echo fgets($myfile);
+        echo fread($myfile, filesize("../response.txt"));
         fclose($myfile);
         ?>
     </div>

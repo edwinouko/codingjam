@@ -8,6 +8,6 @@ dotnet run
 python3 send_mood.py
 
 # display the response from Edgar's API by running a php server UI
-cd ~/Desktop/CODING_JAM_PROJECT/response/
+cd ~/Desktop/coding_jam_project/response/
 php -S localhost:8000
 
