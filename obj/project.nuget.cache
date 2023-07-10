@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tTv8imxC2BLU1k1kIfadiJMkD6+3OR+daslwexBxCMpK5nvIa7RpO+NL0vidkwAlqcLqHWI/qjUbfsQbH8yF8Q==",
+  "success": true,
+  "projectFilePath": "/Users/edwinoouko/Desktop/coding_jam_project/coding_jam_project.csproj",
+  "expectedPackageFiles": [
+    "/Users/edwinoouko/.nuget/packages/microsoft.cognitiveservices.speech/1.30.0/microsoft.cognitiveservices.speech.1.30.0.nupkg.sha512"
+  ],
+  "logs": []
+}
