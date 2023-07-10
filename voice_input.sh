@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get voice input from user
-cd ~/Desktop/CODING_JAM_PROJECT
+cd ~/Desktop/coding_jam_project/
 dotnet run
 
 # get the sentiment of the voice input and send it to Edgar's API
