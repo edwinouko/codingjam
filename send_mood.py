@@ -2,6 +2,7 @@
 import openai
 import os
 import json
+import random
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 def main():
@@ -23,10 +24,14 @@ def main():
     # API to send get request to the server
     response_api = "https://emotionplushie.azurewebsites.net/api/moodRes?mood=" + response_text.lower()
     response = os.popen("curl " + response_api).read()
+    print("response: " + response)
     #write response to response.txt
     f = open("response.txt", "w")
     response = json.loads(response)
-    f.write(response["choices"][0]["message"]["content"])
+    song = response["song"]
+    joke = response["joke"]
+    quote = response["quote"]
+    f.write(random.choice([song, joke, quote]))
     f.close()
 if __name__ == "__main__":
     main()
