@@ -5,8 +5,10 @@
         $file = fopen("../mood.txt", "w") or die("Unable to open file!");
         fwrite($file, $mood_input);
         header("Location: thank_you.html");
+        //open another terminal and run the python script
+
         sleep(5);
-        exec("killall php; python3 ../send_mood.py");
+        exec("killall php");
         exit();
     }  
 ?>

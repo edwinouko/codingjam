@@ -52,7 +52,7 @@
                 Describe how you feel:
                 <input type="text" name="mood" id="mood" placeholder="I feel...">
                 </input>
-                <button type="submit">Submit Form</button>
+                <button type="submit">Submit Form and wait for 2 mins</button>
             </label>
             
         </form>

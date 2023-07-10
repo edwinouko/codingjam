@@ -7,7 +7,11 @@ import random
 openai.api_key = os.getenv("OPENAI_API_KEY")
 def main():
     # read mood.txt
-    f = open("mood.txt", "r")
+    #print filepath
+    try:
+        f = open("./mood.txt", "r")
+    except:
+        f = open("../mood.txt", "r")
     mood = f.read()
     f.close()
     if not mood:
