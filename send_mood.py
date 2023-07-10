@@ -12,6 +12,11 @@ def main():
     f.close()
     if not mood:
         return
+    # empty mood.txt
+    # f = open("mood.txt", "w")
+    # f.write("")
+    # f.close()
+
     mood = mood.replace("\n", "").replace("\r", "").replace("'", "").replace('"', "").replace("\t", "")
     content = "Classify the sentiment of this input in one word as either SAD, HAPPY or NEUTRAL: " + mood
     full_query = "curl https://api.openai.com/v1/chat/completions -H \"Content-Type: application/json\" -H \"Authorization: Bearer " + openai.api_key + "\"  -d '{\
